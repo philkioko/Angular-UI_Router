@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Angular-Authetication</title>
+
+	
+</head>
+<!--our module name-->
+<body ng-app="authApp">
+
+<!--nav-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="auth">Login</a></li>
+        <li><a ui-sref="users">Users</a></li>
+    </ul>
+</nav>
+	<!--end of nav-->
+
+	<!--main body-->
+	<div class="container">
+	    <!--place to inject our views-->
+		<div ui-view></div>
+	</div>
+
+	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="//cdn.jsdelivr.net/satellizer/0.14.1/satellizer.min.js"></script>
+    <script src="app.js"></script>
+     <script src="authController.js"></script>
+     <script src="userController.js"></script>
+     
+
+</body>
+</html>
